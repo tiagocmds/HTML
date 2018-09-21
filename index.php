@@ -7,40 +7,13 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/stilo.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans|Bad+Script'
+     rel='stylesheet'>
    
 </head>
 
 <body>
-
-    <header class="container">
-        <h1>
-            <img src="img/logo.png" alt="Mirror Fashion">
-        </h1>
-        <p class="sacola">
-            Nenhum item na sacola de compras
-        </p>
-        <nav class="menu-op">
-            <ul>
-                <li>
-                    <a href="#">Sua Conta</a>
-                </li>
-                <li>
-                    <a href="#">Lista de Desejos</a>
-                </li>
-                <li>
-                    <a href="#">Cartão Fidelidade</a>
-                </li>
-                <li>
-                    <a href="#">Sobre</a>
-                </li>
-                <li>
-                    <a href="#">Ajuda</a>
-                </li>
-            </ul>
-        </nav>
-
-    </header>
-
+<?php include("cabecalho.php"); ?>
     <div id="main" class="container">
         <div class="container destaque">
 
@@ -52,8 +25,6 @@
                     <button>Buscar</button>
                 </form>
             </section>
-            <!-- fim .busca -->
-
             <section class="menu-departamentos">
                 <h2>Departamentos</h2>
 
@@ -87,7 +58,7 @@
 
             <section class="banner-destaque">
                 <figure>
-                    <img src="img/destaque-home.png" alt="Promoção: Big City Night">
+                    <img src="img/destaque-home.jpg" alt="Promoção: Big City Night">
                 </figure>
             </section>
             <!-- fim .banner-destaque -->
@@ -133,6 +104,7 @@
                         </a>
                     </li>
                 </ol>
+                <button type="button">Mostrar mais</button>
             </section>
             <section class="painel vendidos">
                 <h2>Mais Vendidos</h2>
@@ -162,27 +134,14 @@
                         </a>
                     </li>
                 </ol>
+                <button type="button">Mostrar mais</button>
             </section>
         </div>
     </div>
-
-    <footer>
-        <div class="container">
-        <img src="img/logo-rodape.png" alt="Logo da Mirror Fashion">
-        <ul class="social">
-            <li>
-                <a href="http://facebook.com/mirrorfashion">Facebook</a>
-            </li>
-            <li>
-                <a href="http://twitter.com/mirrorfashion">Twitter</a>
-            </li>
-            <li>
-                <a href="http://plus.google.com/mirrorfashion">Google+</a>
-            </li>
-        </ul>
-    </div>
-    </footer>
-
+<?php include("rodape.php"); ?>
+    
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/home.js"></script>
 </body>
 
 </html>
